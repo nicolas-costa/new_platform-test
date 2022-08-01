@@ -9,7 +9,7 @@ use App\Http\Requests\Swapi\StarshipListRequest;
 use App\Services\Swapi\Resources\Starships;
 use Illuminate\Http\JsonResponse;
 
-class StarshipsController extends Controller
+class StarshipController extends Controller
 {
     private $starshipsService;
 

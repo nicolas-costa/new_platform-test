@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Swapi\StarshipsController;
+use App\Http\Controllers\Swapi\StarshipController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -22,6 +22,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::group(['prefix' => 'swapi'],
     function ($router) {
-        $router->get('starships', StarshipsController::class . '@listStarships');
+        $router->get('starships', StarshipController::class . '@listStarships');
     });
 
