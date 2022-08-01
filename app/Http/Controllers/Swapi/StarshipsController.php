@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Http\Controllers\Swapi;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Swapi\StarshipListRequest;
 use App\Services\Swapi\Resources\Starships;
 use Illuminate\Http\JsonResponse;
 
@@ -17,10 +18,10 @@ class StarshipsController extends Controller
         $this->starshipsService = $starshipsService;
     }
 
-    public function listStarships(): JsonResponse
+    public function listStarships(StarshipListRequest $request): JsonResponse
     {
-        $mglt = request('mglt');
+        $mglt = $request->get('mglt');
 
-        return response()->json($this->starshipsService->list($mglt, request()->getQueryString()));
+        return response()->json($this->starshipsService->list($mglt, $request->getQueryString()));
     }
 }
