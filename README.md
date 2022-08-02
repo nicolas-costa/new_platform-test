@@ -1,6 +1,6 @@
 ## Desafio técnico
 
-Esse projeto foi criado em resposta ao desafio técnico da devopness.
+Esse projeto foi criado em resposta ao desafio técnico.
 
 ## Requisitos:
 
