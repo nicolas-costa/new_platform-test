@@ -6,7 +6,7 @@ namespace Tests\Feature\Http\Controllers\Swapi;
 
 use Tests\TestCase;
 
-class StarshipController extends TestCase
+class StarshipControllerTest extends TestCase
 {
     /**
      * A basic feature test example.
